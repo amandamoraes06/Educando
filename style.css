@@ -1,0 +1,256 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
+    background-color: #ebebeb;   
+}
+
+a:link, a:active, a:visited{
+    color:#315e8a;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline; /*quando o mouse passar por cima irá sublinhar*/
+}
+
+.linha{
+    max-width:960px ; /* largura*/
+    margin: 0 auto;
+    overflow: auto;
+    padding: 5px 0;
+}
+   
+.coluna{
+    padding: 0 10px;
+    float:left;
+}
+
+.col1{/* cada coluna sempre vai ter o tamanho da anterior mais 80px*/
+    width:60px; 
+}
+.col2{
+    width:140px; 
+}
+.col3{
+    width:220px; 
+}
+.col4{
+    width:300px; 
+}
+.col5{
+    width:380px; 
+}
+.col6{
+    width:460px; 
+}
+.col7{
+    width:540px; 
+}
+.col8{
+    width:620px; 
+}
+.col9{
+    width:700px; 
+}
+.col10{
+    width:780px; 
+}
+.col11{
+    width:860px; 
+}
+.col12{
+    width:940px; 
+}
+
+/*REUTILIZAVEIS*/
+
+.sem-padding{
+    padding:0 !important;
+}
+
+.sem-margin{
+    margin: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6{ 
+    margin: 15px 0 10px 0;
+}
+
+ul li, ol li{
+    margin-bottom: 5px; /*Distanciamaneto entre as li na parte de baixo  */
+}
+
+ul.inline li, ol.inline li{ /*todas as ul e ol que tiverem a classe inline o li delas serão estilizadas em linha  */
+    display:inline;
+    margin: 15px; /*irá deixar os elementos mais distantes um do outro  */
+}
+
+ul.inline li:last-child, ol.inline li:last-child{ /*todas as ul e ol que tiverem a classe inline o li delas serão estilizadas */   
+    margin: 0; /*last-child quer dizer que o ultimo conteudo da li não recebe margem a direita  */
+}
+
+ul.sem-marcador, ol.sem-marcador{
+    list-style:none;
+}
+
+/*Cabeçalho do site*/
+header{/* cor do cabeçalho*/     
+    background:  aquamarine; 
+}
+
+.logo{/*Estilo das letras da logo */
+    display: inline;
+    font-size: 35px;
+    position: absolute;
+    color:#315e8a;
+    letter-spacing: -2px;
+}
+
+img{
+    height:80px;
+    width:90px;
+}
+
+.menu{ 
+    text-transform: capitalize; 
+    text-align:right; /*direção do texto */
+    margin-top: 30px;   
+}
+
+.menu li a{
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-size:21px;
+}
+
+.menu li a:hover{
+   
+    text-decoration: none;
+    background: #1f3c58;
+    color:#ebebeb;
+}
+
+.barrahorizontal{/*Linha que corta o cabeçalho e o corpo*/
+    height: 5px;
+    background-color: yellow;
+    width:100%;
+    position: absolute;  
+}
+
+.corpo{/* cor do box central */
+    background: #FFFFFF;
+    max-width:960px ; 
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.atuacao{/* estilização do box secundário*/
+    margin: 0 auto;
+    width:auto;
+    height: auto;
+    background:  #ebebeb;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    padding-top: 5px;
+    padding-bottom: 15px;
+
+}
+.area2{/*estilização do box de cursos*/
+     padding-bottom: 0px;
+}
+
+/* Rodapé do site */
+.footer{
+    background:#1f3c58;
+    color:#ebebeb;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 15px; 
+}
+
+#fotos{/*Estilização das fotos*/
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;  
+}
+
+#fotos1{/*Estilização das fotos*/
+    width: 60%;
+    height:60%;
+    border-radius: 15px; 
+}
+
+.missao{ /*inicio do texto do*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/*Sidebar das páginas*/
+.lateral{
+    background-color: #ebebeb;
+    padding: 20px;
+    border-radius: 15px;
+    height:auto;
+}
+
+/*Página de contato*/
+.contato label{
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.contato input, .contato textarea{
+    display: block;
+    margin-bottom: -5px;
+    padding: 5px 2%;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.contato textarea{
+    height: 250px;
+}
+
+button.botao{
+    width:auto;
+    height: 30px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #1f3c58;
+    color:#ebebeb; 
+    font-size: 14px; 
+    float:right;
+}
+
+button.botao:hover{
+    background-color: #315e8a;
+}
+
+p.central{
+    font-size: 15px;
+}
+
+ul.font{
+    font-size: 15px;
+}
+h5.font,a.font{
+    font-size: 18px;
+}
+.botoes{
+    margin:30px;
+    padding: 5px;
+    background:#ebebeb;
+    width: 150px;
+    border-radius: 5px;
+    
+}
+.botoes:hover{
+    background:#1f3c58;
+    color: #ebebeb;
+}
